@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.rajution.rajkat.vide.MainActivity">
+
+    <ImageView
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:foregroundGravity="center_horizontal"
+        android:src="@drawable/ic_click"
+        android:layout_below="@+id/flash"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:id="@+id/flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_flash_auto_black_24dp"
+        android:layout_below="@+id/videoView" />
+
+    <ImageView
+        android:id="@+id/switch_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_switch_camera_black_24dp"
+        android:layout_below="@+id/videoView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_settings_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/switch_" />
+
+    <TextView
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gallery"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:layout_margin="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/btn"/>
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:id="@+id/videoView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
